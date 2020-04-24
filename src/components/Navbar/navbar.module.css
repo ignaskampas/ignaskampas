@@ -1,0 +1,176 @@
+.nav {
+    position: fixed;
+    top: 0;
+    --nav-item-padding-one-side: 10px;
+    padding: var(--nav-item-padding-one-side) var(--nav-item-padding-one-side) 0px var(--nav-item-padding-one-side);
+    overflow: hidden;
+    width: 100%;
+    z-index: 1;
+    box-sizing: border-box;
+    background-color: var(--primaryMediumColour);
+    font-family: 'Muli', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+    font-weight: 800;
+    --item-color: rgb(255, 255, 255, 0.5);
+    --item-hover-color: rgb(255, 255, 255, .75);
+    --item-active-color: #ffffff;
+}
+
+.navCentre{
+    position: relative;
+    --nav-font-size: 1rem;
+    --icon-scaling: 1.2;
+    --icon-size: calc(var(--nav-font-size) * var(--icon-scaling));
+    width: 100%;
+}
+
+.navItemsContainer {
+    --menu-btn-height: var(--icon-size);
+    --menu-btn-width: calc(var(--menu-btn-height) * 1.39);
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    font-size: var(--nav-font-size);
+    box-sizing: border-box;
+}
+
+.showNav{
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+
+.navTextContainer{
+    display: flex;
+    flex-direction: row;
+    width: 0;
+}
+
+.showNavTextContainer{
+    position: sticky;
+    position: -webkit-sticky; /* Safari */
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    width: 100%;
+    z-index: 1;
+}
+
+.navTextLink {
+    cursor: pointer;
+    text-transform: uppercase;
+    overflow: hidden;
+    margin: 0px var(--nav-item-padding-one-side) var(--nav-item-padding-one-side) var(--nav-item-padding-one-side);
+    text-align: center;
+    white-space: nowrap;
+    color: var(--item-color);
+}
+
+.navTextLink:hover{
+    color: var(--item-hover-color);
+}
+
+.active{
+    color: var(--item-active-color);
+}
+
+.navTextLink:hover.active{
+    color: var(--item-active-color);
+}
+
+.menuBtn{
+    position: relative;
+    margin-bottom: var(--nav-item-padding-one-side);
+    overflow: hidden;
+    height: var(--menu-btn-height);
+    width: var(--menu-btn-width);
+    border: none;
+    background: transparent;
+    color: var(--item-color);
+}
+
+.menuBtn:focus{
+    outline: none;
+}
+
+.hideMenuBtn{
+    display: none;
+}
+
+.menuIcon{
+    position: absolute;
+    top: 54%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* the menu icon had to be increased in size by a factor of 1.475 to fit in its 
+    menuBtn container */
+    height: calc(var(--menu-btn-height) * 1.475);
+    width: calc(var(--menu-btn-width) * 1.475);
+    background: transparent;
+    cursor: pointer;
+}
+
+.exitBtn{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    overflow: hidden;
+    height: calc(var(--icon-size) * 1);
+    width: calc(var(--icon-size) * 1);
+    border: none;
+    background: transparent;
+    z-index: 2;
+    -ms-transform: rotate(45deg); /* IE 9 */
+    -webkit-transform: rotate(45deg); /* Safari prior 9.0 */
+    transform: rotate(45deg); /* Standard syntax */
+    color: var(--item-color);
+}
+
+.exitBtn{
+    outline: none;
+}
+
+.exitIcon{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: calc(var(--icon-size) * 1.5);
+    width: calc(var(--icon-size) * 1.5);
+    background: transparent;
+    cursor: pointer;
+}
+
+.hideExitBtn{
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .navTextContainer{
+        flex-direction: row;
+        width: auto;
+    }
+
+    .menuBtn{
+        display: block;
+        margin-right: 0;
+        margin-left: 0;
+        width: 0;
+    }
+
+    .hideMenuBtn{
+        composes: menuBtn;
+    }
+
+    .showNav{
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .exitBtn{
+        display: none;
+    }
+}

@@ -1,0 +1,10 @@
+.list{
+    margin-bottom: 16px;
+    list-style-position: inside;
+}
+
+@media only screen and (min-width: 768px) {
+    .list{
+        width: calc(100% - 220px);
+    }
+}

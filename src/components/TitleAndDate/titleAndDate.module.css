@@ -1,0 +1,11 @@
+.titleAndDate{
+    margin-bottom: 16px;
+}
+
+@media only screen and (min-width: 768px) {
+    .titleAndDate{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 16px;
+    }
+}

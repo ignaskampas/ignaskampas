@@ -1,0 +1,14 @@
+.skillsContainer{
+    display: grid;
+    grid-template-columns: 1fr;
+    --gap: 19.2px;
+    grid-row-gap: var(--gap);
+    grid-column-gap: var(--gap);
+    width: 100%;
+}
+
+@media only screen and (min-width: 350px) {
+    .skillsContainer{
+        grid-template-columns: repeat(auto-fit, minmax(285px, 1fr));
+    }
+}

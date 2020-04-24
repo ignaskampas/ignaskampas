@@ -1,0 +1,87 @@
+.home{
+    height: auto;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.content{
+    margin: 80px 0;
+}
+
+.imgAndContactDetails{
+    display: flex;
+    flex-direction: row;
+}
+
+.nameAndContactDetails{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: var(--primaryFont);
+    text-transform: uppercase;
+}
+
+.nameContainer{
+    display: inline-block;
+}
+
+.name{
+    --fontSize: 6.4rem;
+    font-size: var(--fontSize);
+    line-height: 5.5rem;
+    color: var(--titleColour);
+}
+
+.contactDetails{
+    --fontSize: 1.6rem;
+    font-size: var(--fontSize);
+    line-height: 2rem;
+    color: var(--textColor);
+}
+
+.colouredText{
+    color: var(--primaryMediumColour);
+}
+
+.contactDetailsContainer{
+    display: inline-block;
+}
+
+.introMessage{
+    color: var(--textColor);
+    font-size: 1.15rem;
+    margin-top: 38px;
+}
+
+.icons{
+    margin-top: 38px;
+}
+
+.icon{
+    --iconSize: 3.3rem;
+    height: var(--iconSize);
+    width: var(--iconSize);
+    margin-right: 16px;
+    color: var(--iconColour);
+}
+
+.icon:hover{
+    color: var(--primaryMediumColour);
+}
+
+.profileImg{
+    display: none;
+}
+
+@media only screen and (min-width: 725px) {
+    .profileImg{
+        display: block;
+        box-sizing: border-box;
+        max-width: 10.78rem;
+        max-height: 10.78rem;
+        border-radius: 50%;
+        border: 0.588rem solid var(--primaryMediumColour);
+        margin-right: 2rem;
+    }
+}
