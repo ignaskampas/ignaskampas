@@ -22,9 +22,7 @@ export default function Skills() {
                         "C++", 
                         "Java", 
                         "Python", 
-                        "Ruby", 
-                        "XML", 
-                        "CUDA C/C++"]} />
+                        "Ruby"]} />
                 </div>
 
                 <div>
@@ -35,14 +33,25 @@ export default function Skills() {
                         "Hibernate", 
                         "Ruby on Rails"]} />
                 </div>
+
+                <div>
+                    <Title3 title="Module Bundlers" />
+                    <SkillList list={[
+                        "Webpack"]} />
+                </div>
+
+                <div>
+                    <Title3 title="Transpilers" />
+                    <SkillList list={[
+                        "Babel"]} />
+                </div>
                 
                 <div>
                     <Title3 title="Database Languages, Platforms and Tools" />
                     <SkillList list={[
                         "MySQL",
                         "SQLite", 
-                        "Firebase (Realtime Database)", 
-                        "MySQL Workbench"]} />
+                        "Firebase (Realtime Database)"]} />
                 </div>
 
                 <div>
@@ -61,17 +70,6 @@ export default function Skills() {
                 <div>
                     <Title3 title="OS" />
                     <SkillList list={["Linux"]} />
-                </div>
-
-                <div>
-                    <Title3 title="IDE & Tools" />
-                    <SkillList list={[
-                        "Eclipse", 
-                        "NetBeans", 
-                        "Visual Studio", 
-                        "Android Studio", 
-                        "Photoshop", 
-                        "Lightroom"]} />
                 </div>
             </div>
         </ShowcaseSection>
