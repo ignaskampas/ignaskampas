@@ -89,21 +89,21 @@ export default function Project(props) {
                     <p>{technologies}</p>
                     <div className={styles.icons}>
                         {props.project.githubLink && 
-                            <a className={styles.iconLink} href={props.project.githubLink}>
+                            <a aria-label="See this project's code on github" className={styles.iconLink} href={props.project.githubLink}>
                                 <div className={styles.projectIconContainer}>
                                     <FaGithubSquare className={[styles.githubIcon, styles.projectIcon].join(' ')}/>
                                 </div>
                             </a>
                         }
                         {props.project.image &&
-                            <button className={[styles.imageBtn, styles.iconLink].join(' ')} onClick={handleOpenModal}>
+                            <button aria-label="Project image" className={[styles.imageBtn, styles.iconLink].join(' ')} onClick={handleOpenModal}>
                                 <div className={styles.projectIconContainer}>
                                     <MdImage className={[styles.imageIcon, styles.projectIcon].join(' ')} />
                                 </div>
                             </button>
                         }
                         {props.project.url &&
-                            <a className={[styles.projectLink, styles.iconLink].join(' ')} href={props.project.url}>
+                            <a aria-label="See project live" className={[styles.projectLink, styles.iconLink].join(' ')} href={props.project.url}>
                                 <div className={styles.projectIconContainer}>
                                     <FiArrowRightCircle className={[styles.projectLinkIcon, styles.projectIcon].join(' ')}/>
                                 </div>
@@ -132,7 +132,7 @@ export default function Project(props) {
                                 }
                             >
                                 <div className={styles.modalContent}> 
-                                    <button className={styles.closeModalBtn} onClick={handleCloseModal}>
+                                    <button aria-label="Close Project Image" className={styles.closeModalBtn} onClick={handleCloseModal}>
                                         <div className={styles.closeBtnBckg}></div>
                                         <div className={[styles.line, styles.line1].join(' ')}></div>
                                         <div className={[styles.line, styles.line2].join(' ')}></div>

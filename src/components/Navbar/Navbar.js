@@ -83,9 +83,9 @@ export default function Navbar(props) {
                         <NavTextLink to={navAnchors[4]} isActive={navAnchors[4] === activeSectionIdx} offset={offset} onClick={closeNav}>{"Employment"}</NavTextLink>
                         <NavTextLink to={navAnchors[5]} isActive={navAnchors[5] === activeSectionIdx} offset={offset} onClick={closeNav}>{"Work Experience"}</NavTextLink>
                     </div>
-                    <button className={isOpen ? [style.menuBtn, style.hideMenuBtn].join(' ') : style.menuBtn}><GiHamburgerMenu className={style.menuIcon} onClick={toggleNav}/></button>
+                    <button aria-label="Expand" className={isOpen ? [style.menuBtn, style.hideMenuBtn].join(' ') : style.menuBtn}><GiHamburgerMenu className={style.menuIcon} onClick={toggleNav}/></button>
                 </div>
-                <button className={isOpen ? style.exitBtn : [style.exitBtn, style.hideExitBtn].join(' ')}><AiOutlinePlus className={style.exitIcon} onClick={closeNav}/></button>
+                <button aria-label="Close" className={isOpen ? style.exitBtn : [style.exitBtn, style.hideExitBtn].join(' ')}><AiOutlinePlus className={style.exitIcon} onClick={closeNav}/></button>
             </div>
         </div>
     )

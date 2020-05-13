@@ -22,10 +22,10 @@ export default function Home() {
                 <div className={styles.icons}>
 
                 </div>
-                <a href="https://uk.linkedin.com/in/ignas-kampas-8469a3ba">
+                <a aria-label="See my linked-in profile" href="https://uk.linkedin.com/in/ignas-kampas-8469a3ba">
                     <FaLinkedin className={styles.icon}/>
                 </a>
-                <a href="https://github.com/ignaskampas">
+                <a aria-label="see my github profile" href="https://github.com/ignaskampas">
                     <FaGithubSquare className={styles.icon}/>
                 </a>
             </div>
