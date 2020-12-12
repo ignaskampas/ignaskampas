@@ -12,7 +12,7 @@ export default function Skills() {
     return (
         <ShowcaseSection id="skills" title="Skills">
             <div className={styles.skillsContainer}>
-                <div>
+            <div>
                     <Title3 title="Programming Languages" />
                     <SkillList list={[
                         "JavaScript", 
@@ -35,9 +35,9 @@ export default function Skills() {
                 </div>
 
                 <div>
-                    <Title3 title="Module Bundlers" />
+                    <Title3 title="State Management Tools" />
                     <SkillList list={[
-                        "Webpack"]} />
+                        "Redux"]} />
                 </div>
 
                 <div>
@@ -45,9 +45,15 @@ export default function Skills() {
                     <SkillList list={[
                         "Babel"]} />
                 </div>
+
+                <div>
+                    <Title3 title="Module Bundlers" />
+                    <SkillList list={[
+                        "Webpack"]} />
+                </div>
                 
                 <div>
-                    <Title3 title="Database Languages, Platforms and Tools" />
+                    <Title3 title="Database Languages and Platforms" />
                     <SkillList list={[
                         "MySQL",
                         "SQLite", 

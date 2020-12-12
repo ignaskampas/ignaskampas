@@ -6,6 +6,12 @@ import ShowcaseSection from '../../ShowcaseSection/ShowcaseSection'
 export default function Employment() {
     return (
         <ShowcaseSection id="employment" title="Employment">
+            <TitleAndDate institution="Nando’s" roleTitle="Grill Cook" date="November 2020  - Present" />
+            <List list={["Grilling food according to the customers’ requests"]} />
+            <TitleAndDate institution="Aldi" roleTitle="Store Assistant" date="September 2020 – October 2020" />
+            <List list={[
+                "Provided excellent customer service to aid the customers", 
+                "Stocked the products quickly and accurately"]} />
             <TitleAndDate institution="The Radcliffe School" roleTitle="Painter and Decorator" date="July 2016 – August 2016" />
             <List list={["Worked as part of the team to paint and decorate the school premises"]} />
             <TitleAndDate institution="The Radcliffe School" roleTitle="Cleaner" date="June 2014 – May 2015" />

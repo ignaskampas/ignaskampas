@@ -8,7 +8,7 @@ export default function Home() {
         <section className={styles.home} id="home">
             <div className={styles.content}>
                 <div className={styles.imgAndContactDetails}>
-                    <img className={styles.profileImg} src={require('./img/profileImg.png')} alt="Profile image"/>
+                    <img className={styles.profileImg} src={require('./img/profileImg.jpg')} alt="Profile image"/>
                     <div className={styles.nameAndContactDetails}>
                         <span className={styles.nameContainer}>
                             <h1 className={styles.name}>Ignas <span className={styles.colouredText}>Kampas</span></h1>
