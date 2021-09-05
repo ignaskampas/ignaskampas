@@ -18,7 +18,7 @@ export default function Home() {
                         </span>
                     </div>
                 </div>
-                <div className={styles.introMessage}>A diligent and highly driven Computer Science BSc graduate seeking a challenging role as a Software Developer. An individual who works effectively both in a team and independently, and is eager to expand his skillset developed in both the University and outside of the University activities.</div>
+                <div className={styles.introMessage}>A diligent and highly driven Computer Science BSc graduate seeking a challenging role as a Front End Web Developer. An individual who works effectively both in a team and independently, and is eager to expand his skillset developed in both the University and outside of the University activities.</div>
                 <div className={styles.icons}>
 
                 </div>
