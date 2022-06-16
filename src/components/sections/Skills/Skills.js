@@ -21,17 +21,13 @@ export default function Skills() {
                         "Sass", 
                         "C++", 
                         "Java", 
-                        "Python", 
-                        "Ruby"]} />
+                        "Python"]} />
                 </div>
 
                 <div>
                     <Title3 title="Frameworks" />
                     <SkillList list={[
-                        "React",
-                        "Spring MVC", 
-                        "Hibernate", 
-                        "Ruby on Rails"]} />
+                        "React"]} />
                 </div>
 
                 <div>
