@@ -1,0 +1,62 @@
+
+.project{
+    background-color: rgb(239, 239, 239);
+    border-radius: 5px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.project:hover{
+    --color: 227;
+    background-color: rgb(227, 227, 227);
+    cursor: pointer;
+}
+
+.heightSetter{
+    position: relative;
+    height: 0px;
+    width: 100%;
+    padding-top: 60%;
+}
+
+.content{
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+}
+
+.thumbnailImg{
+    width: 100%;
+    height: 100%;
+}
+
+.type{
+    position: absolute;
+    top: 13px;
+    left: 13px;
+    background-color: rgba(46, 54, 66, .9);
+    padding: 7px 15px;
+    border-radius: 50px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 0.8rem;
+    letter-spacing: 0.075em;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.overlay:hover{
+    background-color: rgba(0,0,0,0.3);
+}
+

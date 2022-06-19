@@ -1,0 +1,14 @@
+.projectsContainer{
+    display: grid;
+    grid-template-columns: 1fr;
+    --gap: 16px;
+    grid-row-gap: var(--gap);
+    grid-column-gap: var(--gap);
+    width: 100%;
+}
+
+@media only screen and (min-width: 350px) {
+    .projectsContainer{
+        grid-template-columns: repeat(auto-fill, minmax(285px, 1fr));
+    }
+}
