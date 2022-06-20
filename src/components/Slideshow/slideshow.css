@@ -44,6 +44,10 @@
   background-color: #23b9c4;
 }
 
+.slideshowDot:hover {
+  background-color: #000000a8;
+}
+
 .arrowDiv{
   position: relative;
   left: 0;

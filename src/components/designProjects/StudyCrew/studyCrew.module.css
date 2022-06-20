@@ -1,0 +1,27 @@
+.content {
+    padding: 40px 0px 65px 0px;
+}
+
+.center{
+    padding: 0 16px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.gallery {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    grid-column-gap: 1.5rem;
+    grid-row-gap: 2rem;
+}
+
+@media (max-width:  700px) {
+    .gallery {
+        grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+    }
+}
+
+.image{
+    width: 100%;
+}

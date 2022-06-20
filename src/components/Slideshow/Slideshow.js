@@ -15,14 +15,11 @@ export default function Slideshow(){
     const [slideshowHeight, setSlideshowHeight] = useState(0);
 
     useEffect(() => {
-      console.log(typeof indexRef)
       indexRef.current = index;
     }, [index])
 
     function updateSize(idx) {
-      // console.log(typeof idx)
       if (img0.current === null || img1.current === null || img2.current === null || img3.current === null){
-        // setSlideshowHeight(0)
       } else {
         if (idx === 0) {
           setSlideshowHeight(img0.current.clientHeight)
@@ -37,7 +34,6 @@ export default function Slideshow(){
     }
 
     useLayoutEffect(() => {
-      console.log("uselayouteffect executed")
       window.addEventListener('resize', function(){
           updateSize(indexRef.current);
       });
