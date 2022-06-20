@@ -1,0 +1,90 @@
+.slideshow {
+  margin: 0 auto;
+  overflow: hidden;
+  width: 100%;
+}
+
+.controller{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+}
+  
+.slideshowSlider {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  transition: ease 1000ms;
+}
+
+.img {
+  display: inline-block;
+  width: 100%;
+}
+  
+/* Buttons */
+
+.slideshowDots {
+  display: flex;
+  gap: 15px;
+  margin: 0 40px;
+}
+
+.slideshowDot {
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: #c4c4c4;
+}
+
+.slideshowDot.active {
+  background-color: #23b9c4;
+}
+
+.arrowDiv{
+  position: relative;
+  left: 0;
+  top: calc(50% - 35px);
+  width: 70px;
+  height: 70px;
+  background: #00000036;
+  z-index: 1;
+  transition: background 0.5s;
+  border-radius: 50%;
+}
+
+#rightArrowDiv{
+  left: auto;
+  right: 0;
+}
+
+#leftArrowDiv:hover, #rightArrowDiv:hover {
+  background: #000000a8;
+  cursor: pointer;
+}
+
+.arrowDiv .arrow{
+  display: inline-block;
+  border: 3px solid white;
+  width: 10px;
+  height: 10px;
+  border-left: none;
+  border-bottom: none;
+  margin: auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+#leftArrowSpan{
+  transform: rotateZ(-135deg);
+  left: 10%;
+}
+#rightArrowSpan{
+  transform: rotateZ(45deg);
+  right: 2%;
+}
