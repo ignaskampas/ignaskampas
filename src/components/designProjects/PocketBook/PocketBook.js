@@ -1,10 +1,18 @@
 import React from 'react'
+import styles from './pocketBooks.module.css'
+import ShowcaseSection from '../../ShowcaseSection/ShowcaseSection'
 
 export default function PocketBook(){
 
     return (
-        <div style={{ height: '2000px', backgroundColor: 'yellow'}}>
-            <h1 style={{ paddingTop: '200px'}}>PocketBook</h1> 
+        <div className={styles.content}>
+            <div className={styles.center}>
+                <ShowcaseSection>
+                    <div className={styles.casestudyDiv}>
+                        <img className={styles.casestudyImg} src={require("./images/casestudy.png")} alt="case study" />
+                    </div>
+                </ShowcaseSection>
+            </div>
         </div>
     )
 
