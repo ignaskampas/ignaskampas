@@ -48,7 +48,7 @@ export default function DevelopmentProjects() {
     }, []);
 
     return (
-        <ShowcaseSection id="projects" title="Development Projects">
+        <ShowcaseSection title="Development Projects">
             <div className={styles.projectsContainer}>
                 {projects.map((project) => {
                     return(

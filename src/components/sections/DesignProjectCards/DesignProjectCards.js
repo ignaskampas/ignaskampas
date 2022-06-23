@@ -6,7 +6,7 @@ import DesignProjectCard from '../../DesignProjectCard/DesignProjectCard'
 export default function DesignProjectCards() {
     
     return (
-        <ShowcaseSection title="Design Projects">
+        <ShowcaseSection id="projects" title="Design Projects">
             <div className={styles.projectsContainer}>
                 <DesignProjectCard link="designproject/1" type="Case Study" >
                     <img className={styles.thumbnailImg} src={require('./pocketbook_thumbn.png')} />    

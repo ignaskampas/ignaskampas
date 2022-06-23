@@ -22,9 +22,9 @@ function App() {
           <div className={styles.center}>
             <Home />
             <hr className={styles.line}/>
-            <DevelopmentProjects />
-            <hr className={styles.line}/>
             <DesignProjectCards />
+            <hr className={styles.line}/>
+            <DevelopmentProjects />
             <hr className={styles.line}/>
             <Skills />
             <hr className={styles.line}/>
