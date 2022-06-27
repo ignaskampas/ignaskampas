@@ -2,6 +2,7 @@
   margin: 0 auto;
   overflow: hidden;
   width: 100%;
+  --nrOfPhotos: 4;
 }
 
 .controller{
@@ -16,11 +17,12 @@
   flex-direction: row;
   align-items: start;
   transition: ease 1000ms;
+  width: calc(100% * var(--nrOfPhotos));
 }
 
 .img {
   display: inline-block;
-  width: 100%;
+  width: 25%;
 }
   
 /* Buttons */
@@ -55,7 +57,6 @@
   width: 70px;
   height: 70px;
   background: #00000036;
-  z-index: 1;
   transition: background 0.5s;
   border-radius: 50%;
 }

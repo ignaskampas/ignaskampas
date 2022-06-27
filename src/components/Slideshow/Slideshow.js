@@ -102,7 +102,7 @@ export default function Slideshow(){
           
         <div
           className="slideshowSlider"
-          style={{ transform: `translate3d(${-index * 100}%, 0, 0)`, height: slideshowHeight == 0 ? 'auto' : `${slideshowHeight}px`} }
+          style={{ transform: `translate3d(${-index * 25}%, 0, 0)`, height: slideshowHeight == 0 ? 'auto' : `${slideshowHeight}px`} }
         >
           <img ref={img0} key={0} className="img" id="0" src={require("./home.png")} />
           <img ref={img1} key={1} className="img" id="1" src={require("./projects.png")} />
