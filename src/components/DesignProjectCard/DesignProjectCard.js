@@ -11,7 +11,10 @@ export default function DesignProjectCard(props) {
                 <div className={styles.content}>
                     <div className={styles.type}>{props.type}</div>
                     {props.children}
-                    <div className={styles.overlay}></div>
+                </div>
+                <div className={styles.shinyStripesContainer}>
+                    <div className={[styles.shinyStripe, styles.stripe1].join(" ")}></div>
+                    <div className={[styles.shinyStripe, styles.stripe2].join(" ")}></div>
                 </div>
             </div>
         </div>
