@@ -14,7 +14,7 @@ export default function Home() {
                             <h1 className={styles.name}>Ignas <span className={styles.colouredText}>Kampas</span></h1>
                         </span>
                         <span className={styles.contactDetailsContainer}>
-                            <div className={styles.contactDetails}>Milton Keynes · 07710487587 · <span className={styles.colouredText}>ignaskampas1@gmail.com</span></div>
+                            <div className={styles.contactDetails}>Milton Keynes · <span className={styles.colouredText}>ignaskampas1@gmail.com</span></div>
                         </span>
                     </div>
                 </div>
@@ -22,10 +22,10 @@ export default function Home() {
                 <div className={styles.icons}>
 
                 </div>
-                <a aria-label="See my linked-in profile" href="https://uk.linkedin.com/in/ignas-kampas-8469a3ba">
+                <a aria-label="See my linked-in profile" href="https://uk.linkedin.com/in/ignas-kampas-8469a3ba" target="_blank">
                     <FaLinkedin className={styles.icon}/>
                 </a>
-                <a aria-label="see my github profile" href="https://github.com/ignaskampas">
+                <a aria-label="see my github profile" href="https://github.com/ignaskampas" target="_blank">
                     <FaGithubSquare className={styles.icon}/>
                 </a>
             </div>

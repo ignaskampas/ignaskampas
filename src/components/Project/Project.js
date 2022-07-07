@@ -89,7 +89,7 @@ export default function Project(props) {
                     <p>{technologies}</p>
                     <div className={styles.icons}>
                         {props.project.githubLink && 
-                            <a aria-label="See this project's code on github" className={styles.iconLink} href={props.project.githubLink}>
+                            <a aria-label="See this project's code on github" className={styles.iconLink} href={props.project.githubLink} target="_blank">
                                 <div className={styles.projectIconContainer}>
                                     <FaGithubSquare className={[styles.githubIcon, styles.projectIcon].join(' ')}/>
                                 </div>
@@ -103,7 +103,7 @@ export default function Project(props) {
                             </button>
                         }
                         {props.project.url &&
-                            <a aria-label="See project live" className={[styles.projectLink, styles.iconLink].join(' ')} href={props.project.url}>
+                            <a aria-label="See project live" className={[styles.projectLink, styles.iconLink].join(' ')} href={props.project.url} target="_blank">
                                 <div className={styles.projectIconContainer}>
                                     <FiArrowRightCircle className={[styles.projectLinkIcon, styles.projectIcon].join(' ')}/>
                                 </div>
