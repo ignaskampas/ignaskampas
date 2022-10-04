@@ -14,7 +14,7 @@ export default function Home() {
                             <h1 className={styles.name}>Ignas <span className={styles.colouredText}>Kampas</span></h1>
                         </span>
                         <span className={styles.contactDetailsContainer}>
-                            <div className={styles.contactDetails}>Milton Keynes · <span className={styles.colouredText}>ignaskampas1@gmail.com</span></div>
+                            <div className={styles.contactDetails}>Wellingborough · <span className={styles.colouredText}>ignaskampas1@gmail.com</span></div>
                         </span>
                     </div>
                 </div>
