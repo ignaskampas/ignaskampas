@@ -19,9 +19,15 @@ export default function Skills() {
                         "HTML5", 
                         "CSS3", 
                         "Sass", 
-                        "C++", 
-                        "Java", 
-                        "Python"]} />
+                        "Python", 
+                        "Java",
+                        "C++"]} />
+                </div>
+
+                <div>
+                    <Title3 title="Content Management Systems" />
+                    <SkillList list={[
+                        "WordPress"]} />
                 </div>
 
                 <div>
@@ -67,11 +73,6 @@ export default function Skills() {
                     <SkillList list={[
                         "Git", 
                         "GitHub"]} />
-                </div>
-
-                <div>
-                    <Title3 title="OS" />
-                    <SkillList list={["Linux"]} />
                 </div>
             </div>
         </ShowcaseSection>
