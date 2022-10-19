@@ -1,7 +1,7 @@
 import React, {useEffect} from 'react'
 import styles from './interiorDesign.module.css'
 import ShowcaseSection from '../../ShowcaseSection/ShowcaseSection'
-import Slideshow from '../../Slideshow/Slideshow'
+import Slideshow from './Slideshow/Slideshow'
 
 export default function InteriorDesign(){
 
