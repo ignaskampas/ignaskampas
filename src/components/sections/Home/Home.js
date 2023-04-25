@@ -18,7 +18,7 @@ export default function Home() {
                         </span>
                     </div>
                 </div>
-                <div className={styles.introMessage}>A solution driven freelance Web Developer seeking a role as a Front-End Web Developer or freelance work. An individual who works effectively both in a team and independently with a proven history of high standards and passion for web development.</div>
+                <div className={styles.introMessage}>A solution driven Front End Developer with passion for creating visually appealing and user-friendly websites, actively seeking freelance opportunities to turn your digital vision into an unforgettable online presence. With 1 year of commercial front-end development experience, I am confident in my ability to bring your ideas to life and exceed your expectations.</div>
                 <div className={styles.icons}>
 
                 </div>
