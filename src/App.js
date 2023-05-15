@@ -7,7 +7,7 @@ import DesignProjectCards from './components/sections/DesignProjectCards/DesignP
 import Skills from './components/sections/Skills/Skills'
 import Education from './components/sections/Education/Education'
 import Employment from './components/sections/Employment/Employment'
-import WorkExperience from './components/sections/WorkExperience/WorkExperience'
+// import WorkExperience from './components/sections/WorkExperience/WorkExperience'
 import PocketBook from './components/designProjects/PocketBook/PocketBook'
 import StudyCrew from './components/designProjects/StudyCrew/StudyCrew'
 import InteriorDesign from './components/designProjects/InteriorDesign/InteriorDesign'
@@ -28,11 +28,11 @@ function App() {
             <hr className={styles.line}/>
             <Skills />
             <hr className={styles.line}/>
-            <Education />
-            <hr className={styles.line}/>
             <Employment />
             <hr className={styles.line}/>
-            <WorkExperience />
+            <Education />
+            {/* <hr className={styles.line}/>
+            <WorkExperience /> */}
           </div>
         )} />
         <Route path="/designproject/1" element={<PocketBook />} />

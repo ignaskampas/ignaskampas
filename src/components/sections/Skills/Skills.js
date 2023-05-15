@@ -19,41 +19,38 @@ export default function Skills() {
                         "HTML5", 
                         "CSS3", 
                         "Sass", 
+                        "LESS",
                         "Python", 
                         "Java",
-                        "C++"]} />
+                        "PHP",
+                        "XML"]} />
                 </div>
-
+                <div>
+                    <Title3 title="Frameworks" />
+                    <SkillList list={[
+                        "React", "Vue", "Laravel", "Bootstrap"]} />
+                </div>
                 <div>
                     <Title3 title="Content Management Systems" />
                     <SkillList list={[
                         "WordPress"]} />
                 </div>
-
-                <div>
-                    <Title3 title="Frameworks" />
-                    <SkillList list={[
-                        "React"]} />
-                </div>
-
                 <div>
                     <Title3 title="State Management Tools" />
                     <SkillList list={[
                         "Redux"]} />
                 </div>
-
                 <div>
                     <Title3 title="Transpilers" />
                     <SkillList list={[
                         "Babel"]} />
                 </div>
-
                 <div>
                     <Title3 title="Module Bundlers" />
                     <SkillList list={[
                         "Webpack"]} />
                 </div>
-                
+            
                 <div>
                     <Title3 title="Database Languages and Platforms" />
                     <SkillList list={[
@@ -61,18 +58,17 @@ export default function Skills() {
                         "SQLite", 
                         "Firebase (Realtime Database)"]} />
                 </div>
-
                 <div>
                     <Title3 title="Mobile development" />
                     <SkillList list={[
                         "Android Development"]} />
                 </div>
-
                 <div>
                     <Title3 title="Version Control" />
                     <SkillList list={[
                         "Git", 
-                        "GitHub"]} />
+                        "GitHub", 
+                        "Bitbucket"]} />
                 </div>
             </div>
         </ShowcaseSection>

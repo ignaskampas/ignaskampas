@@ -101,16 +101,16 @@ export default function Navbar() {
                                 <li className={style.navListItem}><HashLink to='/#skills'  className={style.navTextLink} onClick={closeNav}>Skills</HashLink></li>
                                 <li className={style.navListItem}><HashLink to='/#education'  className={style.navTextLink} onClick={closeNav}>Education</HashLink></li>
                                 <li className={style.navListItem}><HashLink to='/#employment'  className={style.navTextLink} onClick={closeNav}>Employment</HashLink></li>
-                                <li className={style.navListItem}><HashLink to='/#work-experience'  className={style.navTextLink} onClick={closeNav}>Work Experience</HashLink></li>
+                                {/* <li className={style.navListItem}><HashLink to='/#work-experience'  className={style.navTextLink} onClick={closeNav}>Work Experience</HashLink></li> */}
                             </ul> 
                             : 
                             <div className={isOpen ? [style.navTextContainer, style.showNavTextContainer].join(' ') : style.navTextContainer}>
                                 <NavTextLink to={navAnchors[0]} isActive={navAnchors[0] === activeSectionIdx} offset={offset} onClick={closeNav}>{"About"}</NavTextLink>
                                 <NavTextLink to={navAnchors[1]} isActive={navAnchors[1] === activeSectionIdx} offset={offset} onClick={closeNav}>{"Projects"}</NavTextLink>
                                 <NavTextLink to={navAnchors[2]} isActive={navAnchors[2] === activeSectionIdx} offset={offset} onClick={closeNav}>{"Skills"}</NavTextLink>
-                                <NavTextLink to={navAnchors[3]} isActive={navAnchors[3] === activeSectionIdx} offset={offset} onClick={closeNav}>{"Education"}</NavTextLink>
                                 <NavTextLink to={navAnchors[4]} isActive={navAnchors[4] === activeSectionIdx} offset={offset} onClick={closeNav}>{"Employment"}</NavTextLink>
-                                <NavTextLink to={navAnchors[5]} isActive={navAnchors[5] === activeSectionIdx} offset={offset} onClick={closeNav}>{"Work Experience"}</NavTextLink>
+                                <NavTextLink to={navAnchors[3]} isActive={navAnchors[3] === activeSectionIdx} offset={offset} onClick={closeNav}>{"Education"}</NavTextLink>
+                                {/* <NavTextLink to={navAnchors[5]} isActive={navAnchors[5] === activeSectionIdx} offset={offset} onClick={closeNav}>{"Work Experience"}</NavTextLink> */}
                             </div> 
                         }
                     </div>

@@ -17,6 +17,7 @@
     "react-scroll": "^1.7.16"
   },
   "scripts": {
+    "devstart": "react-scripts --openssl-legacy-provider start",
     "start": "react-scripts start",
     "build": "react-scripts build && cp _redirects build/_redirects",
     "test": "react-scripts test",

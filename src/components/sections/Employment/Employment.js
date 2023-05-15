@@ -6,6 +6,14 @@ import ShowcaseSection from '../../ShowcaseSection/ShowcaseSection'
 export default function Employment() {
     return (
         <ShowcaseSection id="employment" title="Employment">
+            <TitleAndDate institution="LiveLogic" roleTitle="Front End Developer" date="December 2022 - Present" />
+            <List list={[
+                "Working as part of a team to develop Vue.js and Laravel web applications", "Developing eLearning courses according to customer requirements"]} />
+
+            <TitleAndDate institution="Freelance" roleTitle="Web Developer" date="June 2022 - Present" />
+                <List list={[[
+                "Designed, developed and currently maintaining an online store (", <a href='https://kristinamayasewing.co.uk/'>https://kristinamayasewing.co.uk</a>, ") developed using WordPress with WooCommerce."]]} />
+
             <TitleAndDate institution="Nando’s" roleTitle="Buddy Trainer & Waiter & Grill Cook" date="November 2020  - December 2021" />
             <List list={[
                 "Trained new staff for their new positions according to high standards",
